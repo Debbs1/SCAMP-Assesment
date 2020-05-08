@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>git trial</title>
+</head>
+<body>
+ <script>
+ 	var fseries = function (n)
+ 	{
+ 		if (n===1) {
+ 			return [0,1];
+ 	    }
+ 	    else {
+ 		var s= fseries(n - 1);
+ 		s.push(s[s.length - 1] + s[s.length - 2]);
+ 		return s;
+ 	    };
+ 	};
+ 	console.log(fseries(10));
+ </script>
+</body>
+</html>
